@@ -1,0 +1,26 @@
+
+<div *ngIf="!isShowDetails">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <input class="form-control" [(ngModel)]="seachValue" (input)="searchByValue()" placeholder="Search Recipes" type="text"  >
+      </div>
+    </div>
+  </div>
+  &nbsp;
+  <p *ngIf="listNewData.length == 0">There is no data </p>
+  <div class="container" *ngIf="listNewData">
+  <div class="row">
+    <div class="col-sm-6 col-md-4" *ngFor="let data of listNewData" (click)="detailsEvent(data)"  >
+      <div class="thumbnail">
+        <img src="{{data.Poster}}" alt="">
+        <div class="caption">
+          <h3>{{data.Title}}</h3>
+          <p>{{data.rating}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+<router-outlet></router-outlet>
