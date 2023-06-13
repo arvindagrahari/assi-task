@@ -1,0 +1,53 @@
+/* .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+   */
+  .thumbnail { 
+    transition: all .2s ease-in-out; 
+  }
+  
+  .thumbnail:hover { 
+    transform: scale(1.025); 
+  }
+
+  /* ::ng-deep .list-container {
+    min-height: 440px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  } */
+/*   
+  ::ng-deep .product {
+    height: 65px;
+  }
+  
+  ::ng-deep .product > img {
+    height: 100%;
+    width: 95px;
+    float: left;
+  }
+  
+  ::ng-deep .product > div {
+    padding-left: 10px;
+    vertical-align: top;
+    line-height: 65px;
+    font-size: 15px;
+    float: left;
+  }
+   */
+  
+  
+  .container {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: #405065;
+  }
+  
+  
